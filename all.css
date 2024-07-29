@@ -1,0 +1,605 @@
+body {
+    font-family: "Roboto","Noto Sans TC", sans-serif;
+    line-height:  1.5;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+
+  *,*:before,*:after{
+    box-sizing: border-box;
+  }
+/*佈局*/
+.header {
+    background:#AA0601;
+    color: #FFFFFF;
+}
+
+.header a:hover {
+    color: gray;
+}
+
+.footer {
+    background: #AA0601;
+    color: #FFFFFF;
+}
+
+.footer a:hover {
+    color: gray;
+}
+
+.banner {
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.info {
+    background-color: #FBF2F2;
+}
+
+.form {
+    background-color: #FBF2F2;
+}
+
+.card {
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*元件*/
+.btn {
+    background-color: #AA0601;
+    color: #FFFFFF;
+    border: 0;
+    padding: 6px 12px ;
+    font-size: 20px;
+}
+
+.banner button:hover {
+    color: gray;
+}
+
+/*通用*/
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-left: -12px;
+    margin-right: -12px; */
+  }
+
+.col-lg-3{
+  width: 25%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.col-lg-4 {
+  width: 33.333%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.h1 {
+    font-size: 36px;
+}
+
+.h2 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.h3 {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.h4 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 24px;
+    padding-bottom: 8px;
+}
+
+.text-color {
+    color: #650300;
+}
+
+.italic-color {
+    color: #AA0601;
+    font-weight: bold;
+    font-size: 48px;
+    font-style: italic;
+}
+
+.design-color {
+    color: #FFFFFF;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 32px;
+ }
+
+.bg-light {
+    background-color: #FFFFFF;
+}
+
+.bg {
+    height: 248px;
+}
+
+.mb-2 {
+    margin-bottom: 8px;
+}
+
+.mb-4 {
+    margin-bottom: 24px;
+}
+
+.mt-12 {
+    margin-top: 48px;
+}
+
+.mt-4 {
+    margin-top: 24px;
+}
+
+.mt-9 {
+    margin-top: 36px;
+}
+
+.me-12 {
+    margin-right: 48px;
+}
+
+.me-8 {
+    margin-right: 32px;
+}
+
+.ms-5 {
+    margin-left: 20px;
+}
+
+/*頁面元素*/
+/*header*/
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+}
+
+.logo {
+    width: 80px;
+    height: 49px;
+}
+
+.list-item {
+    padding: 25px 32px;
+}
+
+.nav-list {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+@media (max-width: 768px){
+   
+    .container {
+        padding: 0;
+    }
+   
+    .content {
+        flex-direction:column;
+        align-items: start;
+    }
+
+     .content-logo {
+        padding: 12px 0;
+     }
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    .list-item  {
+        width: 50%;
+        font-size: 16px;
+        margin-right: 0;
+        border: 1px solid #FFFFFF;
+        text-align: center;
+        padding: 12px 62px;
+    }
+
+    .nav-list {
+        display: block;
+    }
+   
+}
+/*header*/
+/*banner*/
+
+.banner {
+    height: 787px;
+}
+.banner .container {
+    height: 100%;
+}
+.banner-title {
+    display: block;
+}
+.d-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+
+@media (max-width: 768px){
+     .banner {
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
+     }
+    .banner-title {
+        height: 396px;
+    } 
+
+ }
+ /*banner*/
+ /*info*/
+
+ .info-list {
+    padding: 80px 0;
+ }
+
+ .info-itme {
+    text-align: center;
+ }
+ .img-size {
+    width: 84px;
+    height: 84px;
+ }
+
+ 
+
+ @media (max-width: 992px){
+
+    .mt-6 {
+        margin-top: 24px;
+    }
+    .col-md-6{
+      width: 50%;
+    }
+  }
+
+  @media (max-width: 768px){
+    .info-list {
+        max-width: 375px;
+    }
+    .h2 {
+        font-size: 24px;
+    }
+    .col-sm-12{
+      width: 100%;
+    }
+    .mt-6 {
+        margin-top: 0;
+    }
+    .mt-8 {
+        margin-top: 32px;
+    }
+  }
+/*info*/
+/*photo*/
+
+.photo-img-size {
+    width: 416px;
+    height: 416px;
+}
+.photo-list {
+    padding: 80px 0;
+ }
+
+.mt-2 {
+    margin-top: 8px;
+}
+
+@media (max-width: 992px){
+    .mb-4 {
+        margin-bottom: 24px;
+    }
+    .photo-list {
+        max-width: 336px;
+    }
+    .col-md-12{
+      width: 100%;
+    }
+  }
+  @media (max-width: 768px){ 
+    .photo-list {
+        max-width: 100%;
+        text-align: center;
+ }
+}
+/*photo*/
+/*card*/
+.col-lg-6 {
+    max-width: 50%;
+}
+.card-list {
+    padding: 80px 0;
+}
+.bg {
+    height: 240px;
+}
+@media (max-width: 992px){
+    .bg-light {
+        max-width: 648px;
+    }
+    .card {
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .card-info {
+        margin: 0 auto;
+        max-width: 696px;
+    }
+  }
+  @media (max-width: 768px){ 
+    .card {
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .card-info {
+        max-width: 348px;
+        margin: 0 auto;
+ }
+    .mb-6 {
+        margin-bottom: 32px;
+    }
+  }
+/*card*/
+/*recommend*/
+
+.recommend-list {
+    padding: 80px 0;
+ }
+
+
+.recommend-text {
+    display: flex;
+    flex-direction: column;
+    padding:16px;
+    height: 202px;
+    box-shadow: 0px 2px 6px #00000029;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+}
+
+.text-mg-auto {
+    margin-top: auto;
+}
+@media (max-width: 992px){
+    .mb-4 {
+        margin-bottom: 24px;
+    }
+    .recommend-text {
+        max-width: 612px;
+        height: 205px;
+    }
+}
+@media (max-width: 768px){
+   
+    .mb-3 {
+    margin-bottom: 16px;
+}
+   
+}
+/*recommend*/
+/*form*/
+.form-info-list {
+    padding: 80px 0;
+}
+.form-list {
+    display: flex;
+    flex-direction: column;
+    width: 636px;
+    margin-bottom: 16px;
+}
+.form-text {
+    width: 636px;
+} 
+
+.form-list input {
+    height: 36px;
+}
+.from-btn {
+    width: 416px;
+    height: 56px;
+    background-color: #AA0601;
+    color: #FFFFFF;
+    border: 0;
+}
+.form-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form  button:hover {
+        color: gray;
+    }
+@media (max-width: 992px){
+    .form-text {
+        max-width: 576px;
+    }
+
+    .form-list{
+        max-width: 576px;
+    } 
+    .from-btn {
+        max-width: 336px;
+ }
+}
+@media (max-width: 768px){ 
+    .form-text {
+        max-width: 348px;
+    }
+    .form-list{
+        max-width: 348px;
+    } 
+    .from-btn {
+        max-width: 348px;
+ }
+    .agree-text{
+        max-width: 348px;
+ }
+}
+/*form*/
+/*footer*/
+
+.footer-list {
+    padding: 48px 0 32px 0;
+}
+
+.footer-card {
+display: flex;
+justify-content: space-between;
+}
+
+.footer-img-size {
+    width: 48px;
+    height: 48px;
+}
+
+.footer-d-flex {
+    display: flex;
+}
+
+.footer-color {
+    color: #FFFFFF;
+}
+
+
+.d-block {
+    display: block;
+}
+
+.justify-content {
+    justify-content: space-between;
+    
+}
+.flex-direction-column {
+    flex-direction: column;
+
+}
+.text-decoration {
+    text-decoration: none;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.font-size {
+  font-size: 36px;
+}
+
+.footer-mobile span {
+    font-size: 36px;
+}
+
+.footer-email span {
+    font-size: 36px;
+}
+
+.footer-text {
+    border-top: 1px solid grey;
+}
+
+@media (max-width: 992px){
+    .footer-list {
+        max-width: 768px;
+    }
+    .me-8 {
+        margin-right: 16px;
+    }
+}
+@media (max-width: 768px){ 
+    .footer {
+        padding: 24px 0;
+    }
+    .footer-list {
+        max-width: 375px;
+        margin: 0 auto;
+        padding: 0 12px;
+    }
+    .footer-info-list {
+        display: none;
+    }
+
+    .mt-sm-9 {
+        margin:0 0 8px 0;
+    }
+
+    .mb-sm-2 {
+        margin-bottom: 16px;
+    }
+
+    .mt-sm-2 {
+        margin-top: 16px;
+    }
+
+    .footer-text {
+        display: block;
+    }
+
+    .text-footer {
+        display: block;
+    }
+
+    .font-size {
+        font-size: 16px;
+      }
+      
+      .footer-mobile span {
+          font-size: 24px;
+      }
+
+      .footer-email span {
+        font-size: 24px;
+    }
+    .ms-5 {
+        margin-left: 10px;
+    }
+
+    .me-12 {
+        margin-right: 0;
+    }
+
+  .footer-img-size {
+    width: 24px;
+    height: 24px;
+  }
+
+}
+
+
